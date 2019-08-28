@@ -228,7 +228,9 @@ class MiniMediaPlayer extends LitElement {
       ? `url(${this.config.background})`
       : this.thumbnail;
 
-    return html`<div class='cover' style='background-image: ${url};'></div>`;
+    return html`
+          <div class='cover' style='background-image: ${url};'/>
+    `;
   }
 
   renderIcon(artwork) {

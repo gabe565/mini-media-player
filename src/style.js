@@ -105,6 +105,10 @@ const style = css`
     opacity: var(--mmp-artwork-opacity);
     background: transparent;
   }
+  ha-card[artwork*='cover'].--has-artwork:not(.--group) .mmp__bg .cover {
+    border-radius: var(--ha-card-border-radius, 0);
+    overflow: hidden;
+  }
   ha-card.--group .mmp__bg {
     background: transparent;
   }
